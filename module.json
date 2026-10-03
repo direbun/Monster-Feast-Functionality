@@ -1,0 +1,32 @@
+{
+  "id": "monsters-feast-functionality",
+  "title": "Monsters Feast - Functionality",
+  "description": "A GM registry editor for Monstrous Feast: drag-and-drop creatures, butcher yields, recipes, meal effects and recipe pages.",
+  "version": "1.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "styles": [
+    "styles/editor.css"
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "ionrift-monstrous-feast",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.1.0"
+        }
+      }
+    ]
+  },
+  "url": "https://github.com/direbun/Monster-Feast-Functionality",
+  "manifest": "https://github.com/direbun/Monster-Feast-Functionality/releases/latest/download/module.json",
+  "download": "https://github.com/direbun/Monster-Feast-Functionality/releases/download/v1.1.0/module.zip",
+  "bugs": "https://github.com/direbun/Monster-Feast-Functionality/issues",
+  "readme": "https://github.com/direbun/Monster-Feast-Functionality/blob/main/README.md"
+}

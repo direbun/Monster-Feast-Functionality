@@ -1,0 +1,53 @@
+.mff-editor { --mff-accent: #ad6c31; --mff-border: #89735d66; min-width: 720px; }
+.mff-editor .window-content { padding: 0; overflow: hidden; }
+.mff-editor .mff-shell { display: flex; flex-direction: column; height: 100%; min-height: 0; color: var(--color-text-primary, #28231e); }
+.mff-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 22px; border-bottom: 1px solid var(--mff-border); background: #ad6c3114; }
+.mff-heading h2 { margin: 0 0 5px; border: 0; font-size: 23px; }
+.mff-heading p { margin: 0; opacity: .8; }
+.mff-heading button { flex: 0 0 auto; }
+.mff-layout { display: grid; grid-template-columns: 245px minmax(0, 1fr); flex: 1; min-height: 0; }
+.mff-sidebar { display: flex; flex-direction: column; gap: 10px; padding: 14px; border-right: 1px solid var(--mff-border); min-height: 0; }
+.mff-sidebar nav { display: flex; gap: 5px; }
+.mff-sidebar nav button { flex: 1; }
+.mff-sidebar nav [aria-pressed="true"] { background: var(--mff-accent); color: white; }
+.mff-entries { overflow-y: auto; min-height: 0; display: flex; flex-direction: column; gap: 5px; }
+.mff-editor .mff-entry { text-align: left; display: block; padding: 10px; height: auto; white-space: normal; line-height: 1.35; }
+.mff-entry strong, .mff-entry small { display: block; }
+.mff-entry small { opacity: .65; font-weight: normal; margin-top: 3px; }
+.mff-entry.selected { border-color: var(--mff-accent); background: #ad6c3122; box-shadow: inset 3px 0 var(--mff-accent); }
+.mff-editor [hidden] { display: none !important; }
+.mff-main { overflow-y: auto; padding: 20px; min-width: 0; }
+.mff-title { margin-bottom: 18px; }
+.mff-title h3 { font-size: 23px; margin: 0 0 5px; }
+.mff-title small { opacity: .6; overflow-wrap: anywhere; }
+.mff-card { border: 1px solid var(--mff-border); border-radius: 7px; padding: 15px; margin-bottom: 15px; background: #88888808; }
+.mff-card h4 { font-size: 16px; margin: 0 0 9px; }
+.mff-note { font-size: 12px; line-height: 1.5; opacity: .78; margin: 5px 0 12px; }
+.mff-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.mff-field { display: flex; flex-direction: column; gap: 5px; min-width: 0; font-size: 12px; }
+.mff-field > span { font-weight: 600; }
+.mff-field input, .mff-field select, .mff-field textarea { width: 100%; }
+.mff-field textarea { min-height: 70px; resize: vertical; }
+.mff-row { display: grid; grid-template-columns: 2fr .7fr 1.2fr; gap: 9px; padding: 12px 0; border-top: 1px solid var(--mff-border); align-items: end; }
+.mff-row.mff-ingredient { grid-template-columns: 2fr .7fr auto; }
+.mff-inline { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.mff-inline select { flex: 1; min-width: 130px; }
+.mff-source { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-top: 1px solid var(--mff-border); padding: 10px 0; }
+.mff-source small { display: block; opacity: .6; overflow-wrap: anywhere; }
+.mff-source button { flex: 0 0 auto; }
+.mff-check { display: flex; align-items: center; gap: 7px; font-size: 12px; }
+.mff-card select[multiple] { width: 100%; height: auto; min-height: 110px; }
+.mff-empty { text-align: center; display: grid; place-content: center; min-height: 330px; padding: 35px; border: 2px dashed var(--mff-border); border-radius: 10px; }
+.mff-empty i { font-size: 40px; color: var(--mff-accent); margin-bottom: 20px; }
+.mff-empty p { max-width: 420px; line-height: 1.6; }
+.mff-dragover { border-color: var(--mff-accent); outline: 2px dashed var(--mff-accent); background: #ad6c3122; }
+.mff-footer { display: flex; align-items: center; gap: 8px; padding: 12px 18px; border-top: 1px solid var(--mff-border); }
+.mff-status { flex: 1; font-size: 11px; opacity: .75; }
+.mff-editor button { cursor: pointer; }
+.mff-editor .mff-primary { background: var(--mff-accent); color: white; border-color: var(--mff-accent); min-width: 85px; }
+.mff-busy .mff-shell { pointer-events: none; opacity: .7; }
+@media (max-width: 850px) {
+    .mff-layout { grid-template-columns: 195px minmax(0, 1fr); }
+    .mff-main { padding: 12px; }
+    .mff-footer { flex-wrap: wrap; }
+}
